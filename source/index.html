@@ -8,10 +8,11 @@
 
     <header class="page-header">
       <a class="logo">
-        <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="site_logo" >
+        <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="site_logo">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__tooggle" type="button" aria-label="Открыть меню">Открыть меню</button>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню">Открыть меню</button>
+        <button class="main-nav__close" type="button" aria-label="Закрыть меню">Закрыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__item-link" href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a class="main-nav__item-link" href="form.html">Вязание на заказ</a></li>
@@ -28,8 +29,8 @@
       <section class="assortment">
         <h2 class="visually-hidden">Наш ассортимент</h2>
         <ul class="assortment__list">
-          <li class="assortment__item assortment__item--first-background">Предметы интерьера</li>
-          <li class="assortment__item asortment__item--second-background">Детские игрушки</li>
+          <li class="assortment__item"><a class="assortment__link assortment__link--first-background">Предметы интерьера</a></li>
+          <li class="assortment__item"><a class="assortment__link asortment__link--second-background">Детские игрушки</a></li>
         </ul>
       </section>
       <article class="promo-product">
@@ -52,7 +53,7 @@
         </table>
         <img class="promo-product__image simple-text" src="http://placehold.it/260x315" width="260" height="315" alt="promo-product-image">
         <span class="promo-product__price simple-text">Цена: 990 руб</span>
-        <a class="button" href="#">Заказать</a>
+        <a class="button cart-add" href="#">Заказать</a>
       </article>
       <section class="about-us">
         <h2 class="text-title">Коротко о нас:</h2>
@@ -109,7 +110,7 @@
       </section>
       <section class="page-footer__developers">
         <p class="page-footer__developers-text">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developers-link">
+        <a class="page-footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="page-footer__developers-logo" src="http://placehold.it/27x34" width="27" height="34" alt="developers-logo">
         </a>
       </section>

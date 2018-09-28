@@ -11,7 +11,8 @@
         <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="site_logo" >
       </a>
       <nav class="main-nav">
-        <button class="main-nav__tooggle" type="button" aria-label="Открыть меню">Открыть меню</button>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню">Открыть меню</button>
+        <button class="main-nav__close" type="button" aria-label="Закрыть меню">Закрыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__item-link" href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a class="main-nav__item-link">Вязание на заказ</a></li>
@@ -26,10 +27,10 @@
             <h1 class="text-title text-title--main">Вязание на заказ</h1>
         </section>
         <section class="order-page">
-          <p class="order-page__priview">
+          <p class="order-page__description">
             Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
           </p>
-          <form class="order-form" action="https://echo.htmlacademy.ru" method="post" >
+          <form class="order-form" action="https://echo.htmlacademy.ru" method="get" >
             <fieldset class="order-form__field">
               <legend class="order-form__title">Тип</legend>
               <input type="radio" name="type" id="accessory" checked>
@@ -90,7 +91,7 @@
       </section>
       <section class="page-footer__developers">
         <p class="page-footer__developers-text">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developers-link">
+        <a class="page-footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="page-footer__developers-logo" src="http://placehold.it/27x34" width="27" height="34" alt="developers-logo">
         </a>
       </section>
