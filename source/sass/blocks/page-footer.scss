@@ -1,0 +1,23 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+}
+
+.page-footer__social-list {
+  @include reset-indent;
+  display: flex;
+  list-style: none;
+}
+
+.page-footer__developers {
+  display: flex;
+}
+
+.page-footer__developers-text {
+  @include reset-indent;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+  color: $title;
+}

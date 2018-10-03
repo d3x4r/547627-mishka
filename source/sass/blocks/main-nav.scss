@@ -1,0 +1,38 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__list {
+  @include reset-indent;
+}
+
+.main-nav__item {
+  border-top: 1px solid #ececec;
+}
+
+.main-nav__link--last {
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav__link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $title;
+
+  list-style: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__toggle {
+  width: 21px;
+  height: 20px;
+}

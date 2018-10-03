@@ -1,0 +1,39 @@
+.comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment__text {
+  @include reset-indent;
+  line-height: 30px;
+}
+
+.comment__author {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment__author-name {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $title;
+}
+
+.comment__author-nick {
+  font-size: 17px;
+}
+
+.comment__buttons {
+  display: flex;
+}
+
+.comment__button {
+  display: block;
+  box-sizing: border-box;
+  width: 130px;
+
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  min-height: 52px;
+}
