@@ -42,9 +42,26 @@
   border: 2px solid #444444;
 }
 
+.order-form__text-input:hover,
+.order-form__textarea:hover {
+  border-color: #62d1ba;
+}
+
 .order-form__text-input::placeholder,
 .order-form__textarea::placeholder {
-  font-size: 17px;
+  font-size: 19px;
   line-height: 18px;
   color: #444444;
+  opacity: 0.3;
+}
+
+.order-form__text-input:focus,
+.order-form__textarea:focus {
+  border-color: #62d1ba;
+  opacity: 1;
+}
+
+.order-form__text-input:focus::placeholder,
+.order-form__textarea:focus::placeholder {
+  opacity: 1;
 }
