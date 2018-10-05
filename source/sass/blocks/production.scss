@@ -1,0 +1,25 @@
+.production__video-priview {
+  display: block;
+}
+
+.production__video-button {
+  display: block;
+  width: 101px;
+  height: 77px;
+  background-color: #62d1ba;
+}
+
+.production__text {
+  @include reset-indent;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.production__title {
+  @include reset-indent;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $title;
+}

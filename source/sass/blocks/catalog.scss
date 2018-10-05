@@ -1,0 +1,50 @@
+.catalog__list {
+  @include reset-indent;
+
+  list-style: none;
+}
+
+.catalog__link-image,
+.catalog__image {
+  display: block;
+}
+
+.catalog-title {
+  @include reset-indent;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $title;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.catalog__property {
+  @include reset-indent;
+
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.catalog__price {
+  line-height: 24px;
+  font-weight: bold;
+  color: $title;
+}
+
+.catalog__buy {
+  display: block;
+  width: 20px;
+  height: 19px;
+}
+
+.catalog-wrapper {
+  display: flex;
+}

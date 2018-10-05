@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -11,7 +12,7 @@
         <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="site_logo" >
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Показать или закрыть меню">Меню</button>
+        <button class="main-nav__toggle" type="button" aria-label="Показать или закрыть меню"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a class="main-nav__link">Вязание на заказ</a></li>
@@ -74,7 +75,7 @@
             </fieldset>
             <fieldset class="order-form__field">
               <legend class="order-form__title">Фио</legend>
-              <ul class="oder-form__list">
+              <ul class="order-form__list">
                 <li class="order-form__item">
                   <label class="order-form__label" for="first-name">Имя:</label>
                   <input class="order-form__text-input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*">
@@ -102,7 +103,7 @@
               <textarea class="order-form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </fieldset>
             <span class="order-form__footnote">*Поля обязательны для заполнения</span>
-            <button class="button" type="submit">Отправить заказ</button>
+            <button class="button button--send" type="submit">Отправить заказ</button>
           </form>
         </section>
 

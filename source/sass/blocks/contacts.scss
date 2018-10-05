@@ -1,0 +1,34 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__title {
+  @include reset-indent;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: $title;
+}
+
+.contacts__type,
+.contacts__value {
+  @include reset-indent;
+
+  line-height: 30px;
+}
+
+.contacts__value {
+  &--email {
+    border-bottom: 1px solid #46c1ae;
+  }
+
+  &--email:hover {
+    color: #46c1ae;
+  }
+
+  &--email:active {
+    opacity: 0.3;
+  }
+}

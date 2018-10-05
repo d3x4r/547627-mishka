@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Opensans", "Arial", sans-serif;
+  font-size: 15px;
+  color: $text;
+
+  background-color: $background;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

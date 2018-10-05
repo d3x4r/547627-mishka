@@ -1,0 +1,42 @@
+.button {
+  box-sizing: border-box;
+  width: 260px;
+
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $text;
+  line-height: 20px;
+
+  background-color: #ffffff;
+  border: 2px solid #444444;
+
+  &--write-comment {
+    font-size: 18px;
+  }
+
+  &--write-us {
+    font-size: 18px;
+  }
+
+  &--modal-cart {
+    line-height: 16px;
+    color: #ffffff;
+    background-color: #63d1bb;
+    border: none;
+  }
+
+  &--order,
+  &--send {
+    line-height: 16px;
+  }
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

@@ -1,0 +1,37 @@
+.assortment__list {
+  display: flex;
+  flex-direction: column;
+
+  @include reset-indent;
+  list-style: none;
+}
+
+.assortment__item {
+  &--interior {
+    background-color: #63d1bb;
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+  }
+
+  &--interior:hover {
+    background-color: #59d5bc;
+  }
+
+  &--toys:hover {
+    background-color: #46c1ae;
+  }
+}
+
+.assortment__item:active .assortment__link {
+  opacity: 0.3;
+}
+
+.assortment__link {
+  display: block;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
