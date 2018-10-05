@@ -4,15 +4,24 @@
 }
 
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
+
   @include reset-indent;
+  list-style: none;
 }
 
 .main-nav__item {
   border-top: 1px solid #ececec;
+  flex-shrink: 0;
 }
 
 .main-nav__link--last {
   border-bottom: 1px solid #ececec;
+}
+
+.main-nav__logo {
+  border-top: none;
 }
 
 .main-nav__link {
@@ -30,9 +39,138 @@
   &:active {
     opacity: 0.3;
   }
+
+  &--delivery {
+    font-size: 15px;
+    font-weight: normal;
+  }
 }
 
 .main-nav__toggle {
   width: 21px;
   height: 20px;
+}
+
+.main-nav__new,
+.main-nav__sale,
+.main-nav__delivery {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 668px;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__logo {
+    padding-right: 270px;
+  }
+
+  .main-nav__search {
+    order: 1;
+  }
+
+  .main-nav__link--search {
+    font-size: 0;
+    width: 18px;
+    height: 19px;
+    display: block;
+    background-color: gray;
+  }
+
+  .main-nav__link--catalog {
+    font-size: 15px;
+  }
+
+  .main-nav__link--order {
+    font-size: 15px;
+  }
+
+  .main-nav__basket {
+    order: 2;
+  }
+
+  .main-nav__catalog {
+    order: 3;
+  }
+
+  .main-nav__form {
+    order: 4;
+  }
+
+  .main-nav__delivery {
+    display: block;
+    order: 5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .main-nav__item {
+    width: 210px;
+  }
+
+  .main-nav__link--catalog,
+  .main-nav__link--order {
+    font-size: 17px;
+  }
+
+  .main-nav__link--sale,
+  .main-nav__link--new {
+    font-size: 15px;
+  }
+
+  .main-nav__logo {
+    padding-right: 0;
+  }
+
+  .main-nav__catalog {
+    order: 1;
+  }
+
+  .main-nav__form {
+    order: 2;
+  }
+
+  .main-nav__logo {
+    order: 3;
+  }
+
+  .main-nav__search {
+    order: 4;
+  }
+
+  .main-nav__basket {
+    order: 5;
+  }
+
+  .main-nav__new {
+    display: block;
+    order: 6;
+  }
+
+  .main-nav__sale {
+    display: block;
+    order: 7;
+  }
+
+  .main-nav__delivery {
+    order: 8;
+  }
 }

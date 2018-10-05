@@ -1,4 +1,4 @@
-.comment {
+.comment__wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -37,3 +37,50 @@
   border: 1px solid #ececec;
   min-height: 52px;
 }
+
+@media (min-width: $tablet-width) {
+  .comment {
+    background-image: url("../../img/review@1x.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  .comment__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .text-title {
+    order: 1;
+  }
+
+  .comment__body {
+    order: 3;
+  }
+
+  .comment__buttons {
+    order: 4;
+  }
+
+  .button--write-comment {
+    order: 2;
+  }
+
+  .comment__author {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .comment__author__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment {
+    background-position: 190px 0;
+  }
+}
+
