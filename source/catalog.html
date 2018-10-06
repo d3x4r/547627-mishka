@@ -7,26 +7,29 @@
   </head>
   <body>
 
-    <header class="page-header">
-      <a class="logo" href="index.html">
-        <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="site_logo">
-      </a>
+    <header class="page-header wrapper">
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button" aria-label="Показать или закрыть меню"></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link">Каталог товаров</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__item main-nav__logo"><a class="logo" href="index.html">
+            <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="site_logo"></a>
+          </li>
+          <li class="main-nav__item main-nav__catalog"><a class="main-nav__link main-nav__link--catalog">Каталог товаров</a></li>
+          <li class="main-nav__item main-nav__form"><a class="main-nav__link main-nav__link--order" href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item main-nav__search"><a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item main-nav__basket"><a class="main-nav__link main-nav__link--last" href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__item main-nav__new"><a class="main-nav__link main-nav__link--new" href="#" >Новые поступления</a></li>
+          <li class="main-nav__item main-nav__sale"><a class="main-nav__link main-nav__link--sale" href="#" >Распродажа</a></li>
+          <li class="main-nav__item main-nav__delivery"><a class="main-nav__link main-nav__link--delivery" href="#" >Бесплатная доставка по России</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
         <section class="page-title">
-            <h1 class="text-title text-title--main">Каталог товаров</h1>
+          <h1 class="text-title text-title--main">Каталог товаров</h1>
         </section>
-        <section class="catalog">
+        <section class="catalog wrapper">
           <ul class="catalog__list">
             <li class="catalog__item">
               <a class="catalog__link-image" href="#">
@@ -75,7 +78,7 @@
             </li>
           </ul>
         </section>
-        <section class="production">
+        <section class="production wrapper">
           <h2 class="production__title">Процесс производства</h2>
           <div class="production__video">
               <img class="production__video-priview" src="http://placehold.it/260x160" width="260" height="160" alt="video-priview">
@@ -87,19 +90,24 @@
     </main>
 
     <footer class="page-footer">
-      <section class="page-footer__social">
-        <ul class="page-footer__social-list">
-          <li class="page-footer__social-item"><a class="page-footer__social-link" href="#" aria-label="instagram">Instagram</a></li>
-          <li class="page-footer__social-item"><a class="page-footer__social-link" href="#"  aria-label="facebook">Facebook</a></li>
-          <li class="page-footer__social-item"><a class="page-footer__social-link" href="#" aria-label="twitter">Twitter</a></li>
-        </ul>
-      </section>
-      <section class="page-footer__developers">
-        <p class="page-footer__developers-text">Разработано</p>
-        <a class="page-footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="page-footer__developers-logo" src="http://placehold.it/27x34" width="27" height="34" alt="developers-logo">
+      <div class="page-footer__wrapper wrapper">
+        <a class="page-footer__logo-link" href="index.html">
+          <img class="page-foooter_logo" src="http://placehold.it/102x34" width="102" height="34" alt="Логотип">
         </a>
-      </section>
+        <section class="page-footer__social">
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item"><a class="page-footer__social-link" href="#" aria-label="instagram">Instagram</a></li>
+            <li class="page-footer__social-item"><a class="page-footer__social-link" href="#"  aria-label="facebook">Facebook</a></li>
+            <li class="page-footer__social-item"><a class="page-footer__social-link" href="#" aria-label="twitter">Twitter</a></li>
+          </ul>
+        </section>
+        <section class="page-footer__developers">
+          <p class="page-footer__developers-text">Разработано</p>
+          <a class="page-footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="page-footer__developers-logo" src="http://placehold.it/27x34" width="27" height="34" alt="developers-logo">
+            </a>
+        </section>
+      </div>
     </footer>
 
     <section class="modal-cart">

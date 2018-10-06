@@ -48,3 +48,41 @@
 .catalog-wrapper {
   display: flex;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog__item {
+    display: flex;
+    margin-bottom: 54px;
+  }
+
+  .catalog__link-image {
+    margin-right: 25px;
+  }
+
+  .catalog__item-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog-wrapper {
+    display: flex;
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+
+  .catalog__item {
+    flex-direction: column;
+    width: 316px;
+  }
+
+  .catalog__link-image {
+    margin-right: 0;
+  }
+}
