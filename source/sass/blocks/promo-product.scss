@@ -40,6 +40,7 @@
 
   .promo-prodict__wrapper {
     display: flex;
+    justify-content: space-between;
     margin-right: 20px;
   }
 
@@ -52,9 +53,7 @@
     top: 50px;
     left: 400px;
   }
-}
 
-@media (min-width: $tablet-width) {
   .promo-product__promo-type {
     margin-right: 50px;
     order: 1;
@@ -65,5 +64,9 @@
   .promo-product__promo-type {
     order: -1;
     margin-right: 50px;
+  }
+
+  .promo-prodict__wrapper {
+    justify-content: flex-start;
   }
 }

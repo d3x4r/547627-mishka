@@ -50,7 +50,7 @@
     flex-wrap: wrap;
   }
 
-  .text-title {
+  .comment__title {
     order: 1;
   }
 
@@ -64,6 +64,7 @@
 
   .button--write-comment {
     order: 2;
+    margin-left: auto;
   }
 
   .comment__author {
