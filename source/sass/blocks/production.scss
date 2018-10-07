@@ -1,3 +1,7 @@
+.production__video {
+  position: relative;
+}
+
 .production__video-priview {
   display: block;
 }
@@ -6,6 +10,9 @@
   display: block;
   width: 101px;
   height: 77px;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: #62d1ba;
 }
 
@@ -22,4 +29,49 @@
   line-height: 24px;
   font-weight: bold;
   color: $title;
+}
+
+@media (min-width: $tablet-width) {
+  .production {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .production__video {
+    order: 1;
+  }
+
+  .production__title {
+    order: 2;
+  }
+
+  .production__text {
+    order: 3;
+  }
+
+  .button--order {
+    order: 4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production {
+    position: relative;
+    margin-bottom: 130px;
+    padding-left: 700px;
+  }
+
+  .production__video {
+    position: absolute;
+    top: 0;
+    left: 200px;
+  }
+
+  .production__title {
+    width: 350px;
+  }
+
+  .production__text {
+    width: 350px;
+  }
 }

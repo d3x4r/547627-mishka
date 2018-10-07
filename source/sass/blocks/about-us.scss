@@ -11,8 +11,42 @@
 }
 
 .about-us__item {
+  width: 50%;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
   color: $title;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .about-us__item {
+    &--icon-flower {
+      order: 1;
+    }
+
+    &--icon-money {
+      order: 3;
+    }
+
+    &--icon-heart {
+      order: 5;
+    }
+
+    &--icon-ball {
+      order: 2;
+    }
+
+    &--icon-rocket {
+      order: 4;
+    }
+
+    &--icon-gift {
+      order: 6;
+    }
+  }
 }

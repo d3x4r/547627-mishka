@@ -1,7 +1,16 @@
 .page-footer {
+  background-color: #f1f1f1;
+}
+
+.page-footer__wrapper {
   display: flex;
   flex-direction: column;
-  background-color: #f1f1f1;
+}
+
+.page-footer__logo-link {
+  display: none;
+  width: 102px;
+  height: 34px;
 }
 
 .page-footer__social-list {
@@ -12,6 +21,7 @@
 
 .page-footer__developers {
   display: flex;
+  width: 190px;
 }
 
 .page-footer__developers-text {
@@ -20,4 +30,30 @@
   line-height: 18px;
   font-weight: bold;
   color: $title;
+}
+
+.page-footer__social {
+  width: 200px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo-link {
+    display: block;
+  }
+
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo-link {
+    display: block;
+  }
+
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

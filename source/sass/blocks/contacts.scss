@@ -32,3 +32,54 @@
     opacity: 0.3;
   }
 }
+
+.contacts__map {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contacts__tbody {
+    display: flex;
+  }
+
+  .contacts__value {
+    width: 100%;
+  }
+
+  .contacts__type {
+    vertical-align: top;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+    margin-bottom: 275px;
+  }
+
+  .contacts__tbody {
+    flex-direction: column;
+    width: 240px;
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+
+  .contacts__wrapper {
+    justify-content: flex-start;
+  }
+}

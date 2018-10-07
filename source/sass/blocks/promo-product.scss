@@ -31,3 +31,42 @@
   @include reset-indent;
   line-height: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .promo-product {
+    position: relative;
+    margin-bottom: 150px;
+  }
+
+  .promo-prodict__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+
+  .promo-product__discription {
+    width: 285px;
+  }
+
+  .promo-product__image {
+    position: absolute;
+    top: 50px;
+    left: 400px;
+  }
+
+  .promo-product__promo-type {
+    margin-right: 50px;
+    order: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-product__promo-type {
+    order: -1;
+    margin-right: 50px;
+  }
+
+  .promo-prodict__wrapper {
+    justify-content: flex-start;
+  }
+}

@@ -7,17 +7,20 @@
   </head>
   <body>
 
-    <header class="page-header">
-      <a class="logo" href="index.html">
-        <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="site_logo" >
-      </a>
+    <header class="page-header wrapper">
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button" aria-label="Показать или закрыть меню"></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a class="main-nav__link">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__item main-nav__logo"><a class="logo" href="index.html">
+            <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="site_logo"></a>
+          </li>
+          <li class="main-nav__item main-nav__catalog"><a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item main-nav__form"><a class="main-nav__link main-nav__link--order">Вязание на заказ</a></li>
+          <li class="main-nav__item main-nav__search"><a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item main-nav__basket"><a class="main-nav__link main-nav__link--last" href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__item main-nav__new"><a class="main-nav__link main-nav__link--new" href="#" >Новые поступления</a></li>
+          <li class="main-nav__item main-nav__sale"><a class="main-nav__link main-nav__link--sale" href="#" >Распродажа</a></li>
+          <li class="main-nav__item main-nav__delivery"><a class="main-nav__link main-nav__link--delivery" href="#" >Бесплатная доставка по России</a></li>
         </ul>
       </nav>
     </header>
@@ -27,12 +30,12 @@
             <h1 class="text-title text-title--main">Вязание на заказ</h1>
         </section>
         <section class="order-page">
-          <p class="order-page__description">
+          <p class="order-page__description wrapper">
             Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
           </p>
           <form class="order-form" action="https://echo.htmlacademy.ru" method="get" >
-            <fieldset class="order-form__field">
-              <legend class="order-form__title">Тип</legend>
+            <fieldset class="order-form__field wrapper">
+              <h3 class="order-form__title">Тип</h3>
               <ul class="order-form__list">
                 <li class="order-form__item">
                   <input type="radio" name="type" id="accessory" checked>
@@ -44,37 +47,39 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="order-form__field">
-              <legend class="order-form__title">Цвет</legend>
-              <ul class="order-form__list">
-                <li class="order-form__item">
-                  <input type="checkbox" name="white" id="white" checked>
-                  <label class="order-form__label" for="white">Белый</label>
-                </li>
-                <li class="order-form__item">
-                  <input type="checkbox" name="gray" id="gray" checked>
-                  <label class="order-form__label" for="gray">Серый</label>
-                </li>
-                <li class="order-form__item">
-                  <input type="checkbox" name="turquoise" id="turquoise">
-                  <label class="order-form__label" for="turquoise">"Тиффани"</label>
-                </li>
-                <li class="order-form__item">
-                  <input type="checkbox" name="black" id="black">
-                  <label class="order-form__label" for="black">Черный</label>
-                </li>
-                <li class="order-form__item">
-                  <input type="checkbox" name="pink" id="pink">
-                  <label class="order-form__label" for="pink">Розовый</label>
-                </li>
-                <li class="order-form__item">
-                  <input type="checkbox" name="orange" id="orange">
-                  <label class="order-form__label" for="orange">Оранжевый</label>
-                </li>
-              </ul>
+            <fieldset class="order-form__field order-form__field--background">
+              <div class="order-form__field wrapper">
+                <h3 class="order-form__title">Цвет</h3>
+                <ul class="order-form__list order-form__list-color">
+                  <li class="order-form__item order-form__item-color">
+                    <input type="checkbox" name="white" id="white" checked>
+                    <label class="order-form__label" for="white">Белый</label>
+                  </li>
+                  <li class="order-form__item order-form__item-color">
+                    <input type="checkbox" name="gray" id="gray" checked>
+                    <label class="order-form__label" for="gray">Серый</label>
+                  </li>
+                  <li class="order-form__item order-form__item-color">
+                    <input type="checkbox" name="turquoise" id="turquoise">
+                    <label class="order-form__label" for="turquoise">"Тиффани"</label>
+                  </li>
+                  <li class="order-form__item order-form__item-color">
+                    <input type="checkbox" name="black" id="black">
+                    <label class="order-form__label" for="black">Черный</label>
+                  </li>
+                  <li class="order-form__item order-form__item-color">
+                    <input type="checkbox" name="pink" id="pink">
+                    <label class="order-form__label" for="pink">Розовый</label>
+                  </li>
+                  <li class="order-form__item order-form__item-color">
+                    <input type="checkbox" name="orange" id="orange">
+                    <label class="order-form__label" for="orange">Оранжевый</label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
-            <fieldset class="order-form__field">
-              <legend class="order-form__title">Фио</legend>
+            <fieldset class="order-form__field wrapper">
+              <h3 class="order-form__title">Фио</h3>
               <ul class="order-form__list">
                 <li class="order-form__item">
                   <label class="order-form__label" for="first-name">Имя:</label>
@@ -90,39 +95,48 @@
                   </li>
               </ul>
             </fieldset>
-            <fieldset class="order-form__field">
-              <legend class="order-form__title">Тел</legend>
-              <input class="order-form__text-input" type="tel" name="tel" id="tel" placeholder="+7 xxx xxx xx xx*">
-            </fieldset>
-            <fieldset class="order-form__field">
-              <legend class="order-form__title">E-mail</legend>
-              <input class="order-form__text-input" type="email" name="email" id="email" placeholder="Ваш Email*">
-            </fieldset>
-            <fieldset class="order-form__field">
-              <legend class="order-form__title">Доп</legend>
+            <div class="order-form__field--background">
+              <fieldset class="order-form__field wrapper">
+                <h3 class="order-form__title">Тел</h3>
+                <input class="order-form__text-input" type="tel" name="tel" id="tel" placeholder="+7 xxx xxx xx xx*">
+              </fieldset>
+              <fieldset class="order-form__field wrapper">
+                <h3 class="order-form__title">E-mail</h3>
+                <input class="order-form__text-input" type="email" name="email" id="email" placeholder="Ваш Email*">
+              </fieldset>
+            </div>
+            <fieldset class="order-form__field wrapper">
+              <h3 class="order-form__title">Доп</h3>
               <textarea class="order-form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </fieldset>
-            <span class="order-form__footnote">*Поля обязательны для заполнения</span>
-            <button class="button button--send" type="submit">Отправить заказ</button>
+            <div class="order-form__container wrapper">
+              <span class="order-form__footnote">*Поля обязательны для заполнения</span>
+              <button class="button button--send" type="submit">Отправить заказ</button>
+            </div>
           </form>
         </section>
 
     </main>
 
     <footer class="page-footer">
-      <section class="page-footer__social">
-        <ul class="page-footer__social-list">
-          <li class="page-footer__social-item"><a class="page-footer__social-link" href="#" aria-label="instagram">Instagram</a></li>
-          <li class="page-footer__social-item"><a class="page-footer__social-link" href="#"  aria-label="facebook">Facebook</a></li>
-          <li class="page-footer__social-item"><a class="page-footer__social-link" href="#" aria-label="twitter">Twitter</a></li>
-        </ul>
-      </section>
-      <section class="page-footer__developers">
-        <p class="page-footer__developers-text">Разработано</p>
-        <a class="page-footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="page-footer__developers-logo" src="http://placehold.it/27x34" width="27" height="34" alt="developers-logo">
+      <div class="page-footer__wrapper wrapper">
+        <a class="page-footer__logo-link" href="index.html">
+          <img class="page-foooter_logo" src="http://placehold.it/102x34" width="102" height="34" alt="Логотип">
         </a>
-      </section>
+        <section class="page-footer__social">
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item"><a class="page-footer__social-link" href="#" aria-label="instagram">Instagram</a></li>
+            <li class="page-footer__social-item"><a class="page-footer__social-link" href="#"  aria-label="facebook">Facebook</a></li>
+            <li class="page-footer__social-item"><a class="page-footer__social-link" href="#" aria-label="twitter">Twitter</a></li>
+          </ul>
+        </section>
+        <section class="page-footer__developers">
+          <p class="page-footer__developers-text">Разработано</p>
+          <a class="page-footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="page-footer__developers-logo" src="http://placehold.it/27x34" width="27" height="34" alt="developers-logo">
+          </a>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
