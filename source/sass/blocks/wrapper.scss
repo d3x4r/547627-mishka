@@ -1,12 +1,12 @@
 .wrapper {
-  width: 320px;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
 @media (min-width: $tablet-width) {
   .wrapper {
-    width: 668px;
+    width: 87%;
   }
 }
 
