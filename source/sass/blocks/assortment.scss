@@ -2,11 +2,16 @@
   background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center -18px;
 }
 
 .assortment__title {
-  min-height: 285px;
+  box-sizing: border-box;
+  width: 250px;
+  margin: 0 auto;
+  min-height: 282px;
+  padding-top: 69px;
+  text-align: center;
 }
 
 .assortment__list {
@@ -19,6 +24,7 @@
 
 .assortment__item {
   width: 100%;
+  position: relative;
 
   &--interior {
     background-color: #63d1bb;
@@ -43,26 +49,145 @@
 
 .assortment__link {
   display: block;
+  width: 110px;
+  padding: 27.4px 9%;
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
   color: #ffffff;
 }
 
+.assortment__item--interior::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 62px;
+  opacity: 0.5;
+  top: 23px;
+  right: 11.5%;
+  background-image: url("../img/icon-interior.svg");
+}
+
+.assortment__item--toys::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+  top: 21px;
+  right: 8.5%;
+  background-image: url("../img/icon-toy.svg");
+}
+
+
 @media (min-width: $tablet-width) {
+  .assortment {
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-position: center 103%;
+    background-repeat: repeat-x;
+  }
+
+  .assortment__title {
+    width: 500px;
+    padding-top: 95px;
+    min-height: 568px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
   .assortment__list {
+    position: relative;
     flex-direction: row;
+  }
+
+  .assortment__list::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 29px;
+    left: 0;
+    bottom: -19px;
+    background-color: transparent;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-position: center bottom;
+    z-index: 1;
+  }
+
+  .assortment__link {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 28.4px 10.6%;
+  }
+
+  .assortment__item--interior::before {
+    top: 30px;
+    right: 10.8%;
+  }
+
+  .assortment__item--toys::before {
+    top: 32px;
+    right: 10.5%;
   }
 
   .assortment__wrapper {
     margin: 0 auto;
-    width: 668px;
+    width: 87%;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -59px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .assortment__title {
+    width: 615px;
+    min-height: 576px;
+    padding-top: 103px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
   .assortment__wrapper {
     margin: 0 auto;
     width: 1050px;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -51px;
+  }
+
+  .assortment__link {
+    width: 160px;
+    padding-left: 7%;
+  }
+
+  .assortment__item--interior::before {
+    top: 30px;
+    right: 6.8%;
+  }
+
+  .assortment__item--toys::before {
+    top: 32px;
+    right: 6.5%;
+  }
+
+  .assortment {
+    position: relative;
+    background-image: none;
+  }
+
+  .assortment__list::before {
+    display: none;
+  }
+
+  .assortment__wrapper::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 34px;
+    left: 0;
+    bottom: -19px;
+    background-image: url("../img/bg-zigzag-fill-desktop.svg");
+    background-position: left bottom;
+    z-index: 1;
   }
 }
