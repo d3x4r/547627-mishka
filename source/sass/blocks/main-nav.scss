@@ -30,6 +30,14 @@
   padding-bottom: 22px;
   align-self: center;
   border-top: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__logo-image {
@@ -47,7 +55,7 @@
   list-style: none;
 
   &:hover {
-    opacity: 0.6;
+    color: rgba(0, 0, 0, 0.6);
   }
 
   &:active {
@@ -133,7 +141,11 @@
   position: absolute;
   top: 5px;
   left: -42px;
-  opacity: 0.2;
+}
+
+.main-nav__link:hover .main-nav__search-icon path,
+.main-nav__link:hover .main-nav__cart-icon path {
+  fill: #63d1bb;
 }
 
 @media (min-width: $tablet-width) {
@@ -213,7 +225,7 @@
   .main-nav__basket {
     box-sizing: border-box;
     padding-top: 30px;
-    padding-left: 8.8%;
+    padding-left: 9.3%;
     flex-grow: 1;
     order: 2;
     width: 34%;
@@ -248,6 +260,12 @@
     width: 50%;
     padding-left: 13.5%;
     background-color: #f9f9f9;
+  }
+
+  .main-nav__catalog--second-page,
+  .main-nav__form--second-page,
+  .main-nav__delivery--second-page {
+    background-color: #f1f1f1;
   }
 }
 
@@ -298,9 +316,9 @@
   .main-nav__logo {
     order: 3;
     width: 20%;
-    padding-top: 15px;
+    padding-top: 9px;
     padding-left: 3.5%;
-    padding-bottom: 0;
+    padding-bottom: 7px;
   }
 
   .main-nav__search {
@@ -342,5 +360,10 @@
     order: 8;
     padding-top: 17px;
     width: 38%;
+  }
+
+  .main-nav__new--second-page,
+  .main-nav__sale--second-page {
+    background-color: #f1f1f1;
   }
 }

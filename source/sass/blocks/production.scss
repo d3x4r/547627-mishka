@@ -1,6 +1,6 @@
 .production {
   width: 80%;
-  margin-top: 31px;
+  margin-top: 29px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 59px;
@@ -13,6 +13,7 @@
 
 .production__video-preview {
   display: block;
+  width: 100%;
 }
 
 .production__video-button {
@@ -24,6 +25,15 @@
   left: calc(50% - 50.5px);
 
   background-image: url("../img/icon-play.svg");
+}
+
+.production__video-button:hover {
+  transform: scale(1.2);
+}
+
+.production__video-button:active {
+  transform: scale(0.8);
+  opacity: 0.3;
 }
 
 .production__text {
@@ -81,8 +91,6 @@
 
   .production__video {
     order: 1;
-    width: 668px;
-    height: 455px;
   }
 
   .production__title {
@@ -115,8 +123,7 @@
   }
 
   .production__video-preview {
-    width: 668px;
-    height: 455px;
+    width: 100%;
   }
 }
 
@@ -164,6 +171,14 @@
 
   .production__button {
     width: 79.5%;
-    margin: 47px 0 0 2px;
+    margin: 44px 0 0 2px;
+  }
+
+  .production:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .production:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }

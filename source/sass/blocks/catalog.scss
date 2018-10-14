@@ -11,8 +11,9 @@
 
 .catalog__image {
   display: block;
-  width: 260px;
-  height: 195px;
+  // width: 260px;
+  // height: 195px;
+  width: 100%;
 }
 
 .catalog__link-image,
@@ -38,7 +39,7 @@
 }
 
 .catalog__item {
-  width: 260px;
+  // width: 260px;
   margin-top: 31px;
   margin-left: auto;
   margin-right: auto;
@@ -63,6 +64,14 @@
   display: block;
   width: 20px;
   height: 19px;
+}
+
+.catalog__buy:hover path {
+  fill: #63d1bb;
+}
+
+.catalog__buy:active path {
+  opacity: 0.3;
 }
 
 .catalog-wrapper {
@@ -161,6 +170,15 @@
     padding-left: 7%;
     padding-right: 10%;
   }
+
+  .catalog__item-info:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .catalog__item-info:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
 
   .catalog__link-image {
     margin-right: 0;
