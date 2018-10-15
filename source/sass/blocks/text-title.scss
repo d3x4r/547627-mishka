@@ -8,12 +8,22 @@
   &--main {
     font-size: 27px;
   }
+
+  &--order {
+    padding-top: 70px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .text-title {
     font-size: 43px;
     line-height: 50px;
+
+    &--order {
+      padding-top: 34px;
+      font-size: 43px;
+      line-height: 50px;
+    }
   }
 }
 
@@ -21,5 +31,9 @@
   .text-title {
     font-size: 53px;
     line-height: 57px;
+
+    &--order {
+      padding-top: 42px;
+    }
   }
 }

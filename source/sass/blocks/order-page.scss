@@ -1,6 +1,35 @@
+.order-page {
+  margin-top: 22px;
+}
+
 .order-page__description {
   @include reset-indent;
 
+  width: 81%;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 13px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .order-page__description {
+    width: 86.9%;
+    margin-top: 42px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-page {
+    padding-top: 38px;
+  }
+
+  .order-page__description {
+    width: 60.8%;
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
