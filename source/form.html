@@ -5,6 +5,11 @@
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Pixel Glass -->
+    <link href="css/pixel-form.css" rel="stylesheet">
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
   <body>
 
@@ -46,14 +51,14 @@
           </p>
           <form class="order-form" action="https://echo.htmlacademy.ru" method="get" >
             <div class="order-form__field order-form__type">
-              <h3 class="order-form__title">Тип</h3>
+              <h3 class="order-form__title order-form__title-type">Тип</h3>
               <ul class="order-form__list">
                 <li class="order-form__item">
-                  <input class="visually-hidden" type="radio" name="type" id="accessory" checked>
+                  <input class="order-form__radio visually-hidden" type="radio" name="type" id="accessory" checked>
                   <label class="order-form__label order-form__label--radio" for="accessory">Аксессуар для интерьера</label>
                 </li>
                 <li class="order-form__item">
-                  <input class="visually-hidden" type="radio" name="type" id="toy">
+                  <input class="order-form__radio visually-hidden" type="radio" name="type" id="toy">
                   <label class="order-form__label order-form__label--radio" for="toy">Детская игрушка</label>
                 </li>
               </ul>
@@ -63,27 +68,27 @@
                 <h3 class="order-form__title order-form__title--color">Цвет</h3>
                 <ul class="order-form__list order-form__list-color">
                   <li class="order-form__item order-form__item-color">
-                    <input class="visually-hidden" type="checkbox" name="white" id="white" checked>
+                    <input class="order-form_checkbox visually-hidden" type="checkbox" name="white" id="white" checked>
                     <label class="order-form__label order-form__label--checkbox" for="white">Белый</label>
                   </li>
                   <li class="order-form__item order-form__item-color">
-                    <input class="visually-hidden" type="checkbox" name="gray" id="gray" checked>
+                    <input class="order-form_checkbox visually-hidden" type="checkbox" name="gray" id="gray" checked>
                     <label class="order-form__label order-form__label--checkbox" for="gray">Серый</label>
                   </li>
                   <li class="order-form__item order-form__item-color">
-                    <input class="visually-hidden" type="checkbox" name="turquoise" id="turquoise">
+                    <input class="order-form_checkbox visually-hidden" type="checkbox" name="turquoise" id="turquoise">
                     <label class="order-form__label order-form__label--checkbox" for="turquoise">«Тиффани»</label>
                   </li>
                   <li class="order-form__item order-form__item-color">
-                    <input class="visually-hidden" type="checkbox" name="black" id="black">
+                    <input class="order-form_checkbox visually-hidden" type="checkbox" name="black" id="black">
                     <label class="order-form__label order-form__label--checkbox" for="black">Черный</label>
                   </li>
                   <li class="order-form__item order-form__item-color">
-                    <input class="visually-hidden" type="checkbox" name="pink" id="pink">
+                    <input class="order-form_checkbox visually-hidden" type="checkbox" name="pink" id="pink">
                     <label class="order-form__label order-form__label--checkbox" for="pink">Розовый</label>
                   </li>
                   <li class="order-form__item order-form__item-color">
-                    <input class="visually-hidden" type="checkbox" name="orange" id="orange">
+                    <input class="order-form_checkbox visually-hidden" type="checkbox" name="orange" id="orange">
                     <label class="order-form__label order-form__label--checkbox" for="orange">Оранжевый</label>
                   </li>
                 </ul>
