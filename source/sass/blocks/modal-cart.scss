@@ -1,5 +1,43 @@
+#map {
+  width: 525px;
+  height: 475px;
+}
 .modal-cart {
+  position: fixed;
   display: none;
+  top: 10%;
+  left: calc(50% - 160px);
+  width: 318px;
+  padding-top: 30px;
+  padding-bottom: 46px;
+  background-color: #ffffff;
+  z-index: 20;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 1%;
+}
+
+.modal-cart--show {
+  display: block;
+}
+
+.modal-cart__form {
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-cart__title {
+  width: 148px;
+  padding-left: 60px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.modal-cart__text {
+  width: 151px;
+  margin-left: 63px;
+  margin-bottom: 30px;
 }
 
 .modal-cart__form {
@@ -7,8 +45,85 @@
   flex-direction: column;
 }
 
+.modal-cart__inputs-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+
 .modal-cart__input {
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 16px;
+  width: 82px;
+  min-height: 52px;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
+  border: 2px solid #ececec;
+  text-align: center;
 }
+
+.modal-cart__input:hover {
+  border-color: #c7c7c7;
+}
+
+.modal-cart__radio:checked + .modal-cart__input {
+  border-color: #63d1bb;
+
+}
+
+.modal-cart__button {
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-cart {
+    width: 566px;
+    left: calc(50% - 283px);
+    padding-top: 33px;
+  }
+
+  .modal-cart__title {
+    font-size: 30px;
+    line-height: 57px;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .modal-cart__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .modal-cart__form {
+    width: 354px;
+  }
+
+  .modal-cart__input {
+    width: 114px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-cart {
+    padding-top: 0;
+  }
+
+  .modal-cart__title {
+    padding-top: 33px;
+    padding-left: 2px;
+    margin-bottom: 13px;
+  }
+
+  .modal-cart__text {
+    width: 155px;
+    margin-left: 100px;
+    margin-bottom: 22px;
+  }
+}
+

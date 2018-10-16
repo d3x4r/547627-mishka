@@ -125,6 +125,10 @@
   }
 }
 
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
 .main-nav__new,
 .main-nav__sale,
 .main-nav__delivery {
@@ -158,6 +162,14 @@
   .main-nav__item {
     padding: 17px 0;
     flex-shrink: 0;
+    border: none;
+  }
+
+  .main-nav--close .main-nav__item {
+    display: block
+  }
+
+  .main-nav--close .main-nav__list {
     border: none;
   }
 
