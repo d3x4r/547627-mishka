@@ -46,16 +46,13 @@
 
 .order-form__title {
   @include reset-indent;
+  display: flex;
   margin-bottom: 33px;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
   color: #63d1bb;
   text-transform: uppercase;
-}
-
-.order-form__title {
-  display: flex;
 }
 
 .order-form__title-type {
@@ -127,7 +124,7 @@
   box-shadow: 0 0 0 2px #444444;
 }
 
-.order-form__label--radio:hover::before{
+.order-form__label--radio:hover::before {
   border-color: #62d1ba;
 }
 
@@ -135,7 +132,7 @@
   box-shadow: 0 0 0 2px #62d1ba;
 }
 
-.order-form__label--radio:active::before{
+.order-form__label--radio:active::before {
   border-color: #c7c7c7;
 }
 
@@ -183,7 +180,6 @@
   box-sizing: border-box;
   border: none;
   border-bottom: 2px solid #000000;
-
 }
 
 .order-form__text-input--tel {
