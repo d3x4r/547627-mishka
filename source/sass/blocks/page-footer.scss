@@ -18,11 +18,11 @@
   height: 34px;
 }
 
-.page-footer__logo-link:hover path {
+.page-footer__logo:hover {
   fill: #46c1ae;
 }
 
-.page-footer__logo-link:active path {
+.page-footer__logo:active {
   opacity: 0.3;
 }
 
@@ -41,11 +41,11 @@
   height: 40px;
 }
 
-.page-footer__social-item:hover path {
+.page-footer__social-icon:hover {
   fill: #46c1ae;
 }
 
-.page-footer__social-item:active path {
+.page-footer__social-icon:active {
   opacity: 0.3;
 }
 
@@ -66,7 +66,7 @@
   margin-top: 21px;
 }
 
-.page-footer__developers:hover .page-footer__developers-link path {
+.page-footer__developers:hover .page-footer__developers-logo {
   fill: #46c1ae;
 }
 
