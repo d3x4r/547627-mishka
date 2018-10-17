@@ -136,6 +136,10 @@
   .page-footer__form {
     margin: 0;
   }
+
+  .page-footer--clear {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
