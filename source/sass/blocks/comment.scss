@@ -172,7 +172,7 @@
 
 @media (min-width: $desktop-width) {
   .comment {
-    max-width: 1150px;
+    width: 1150px;
     margin-left: auto;
     margin-right: auto;
     margin-top: -70px;
@@ -184,11 +184,9 @@
   }
 
   .comment__wrapper {
-    width: 1050px;
+    width: 885px;
     margin-top: 41px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 221px;
+    margin-left: 221px;
   }
 
   .comment__button-write {
