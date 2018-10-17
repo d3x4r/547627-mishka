@@ -1,7 +1,7 @@
 ymaps.ready(init);
 
 function init () {
-    var myMap = new ymaps.Map("map", {
+    var myMap = new ymaps.Map(document.getElementsByClassName('contacts__map-yandex')[0], {
         center:[59.938597,30.323075],
         zoom: 16.7,
         controls: []
@@ -13,8 +13,6 @@ function init () {
                     },{
                     iconImageHref: 'img/icon-map-pin.svg',
                     iconImageSize: [67, 100],
-                    // Смещение левого верхнего угла иконки относительно
-                    // её «ножки» (точки привязки).
                     iconImageOffset: [-35, -80]
     });
 
