@@ -1,5 +1,39 @@
 .page-title {
   text-align: center;
   background-color: #f1f1f1;
-  min-height: 250px;
+  min-height: 177px;
+}
+
+.page-title__text {
+  padding-top: 70px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    min-height: 181px;
+
+    background-image: url("../img/bg-zigzag-fill-tablet-catalog.svg");
+    background-position: right bottom;
+    background-repeat: repeat-x;
+  }
+
+  .page-title__text {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    min-height: 221px;
+
+    background-image: url("../img/bg-zigzag-fill-desktop-catalog.svg");
+    background-position: right bottom;
+    background-repeat: repeat-x;
+  }
+
+  .page-title__text {
+    padding-top: 44px;
+    padding-bottom: 36px;
+  }
 }

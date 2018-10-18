@@ -56,6 +56,16 @@
   min-height: 52px;
 }
 
+.comment__button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.comment__button:active {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
 .comment__button--left {
   background-image: url("../img/icon-left-arrow.svg");
   background-repeat: no-repeat;
@@ -83,6 +93,12 @@
       url("../img/bg-zigzag-line-tablet.svg");
     background-position: left top, left bottom;
     background-repeat: no-repeat, repeat-x;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg"),
+        url("../img/bg-zigzag-line-tablet.svg");
+      background-size: 350px auto, auto;
+    }
   }
 
   .comment__wrapper {
@@ -156,6 +172,9 @@
 
 @media (min-width: $desktop-width) {
   .comment {
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: -70px;
     background-image: url("../img/review@1x.jpg"),
       url("../img/bg-zigzag-line-desktop.svg");
@@ -165,11 +184,9 @@
   }
 
   .comment__wrapper {
-    width: 1050px;
+    width: 885px;
     margin-top: 41px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 221px;
+    margin-left: 221px;
   }
 
   .comment__button-write {
