@@ -10,6 +10,7 @@
 
   @include reset-indent;
   list-style: none;
+  z-index: 1;
 }
 
 .main-nav__item {
@@ -59,13 +60,18 @@
   }
 
   &:active {
-    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
   }
 
   &--delivery {
     font-size: 15px;
     font-weight: normal;
   }
+}
+
+.main-nav__link--search:active .main-nav__search-icon,
+.main-nav__link--cart:active .main-nav__cart-icon {
+  opacity: 0.3;
 }
 
 .main-nav__toggle {
@@ -279,7 +285,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 1050px;
+    max-width: 1150px;
     margin: 0 auto;
   }
 

@@ -17,12 +17,27 @@ var buy = document.querySelector(".promo-product__button");
 var modal = document.querySelector(".modal-cart");
 var overlay = document.querySelector(".modal-overlay");
 
+if (buy) {
 buy.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal.classList.add("modal-cart--show");
   overlay.classList.add("modal-overlay--show");
 
 });
+}
+var purchase = document.querySelectorAll(".catalog__buy"),
+        index, button;
+
+      var modalCart = document.querySelector(".modal-cart");
+
+      for (index = 0; index < purchase.length; index++) {
+    button = purchase[index];
+        button.addEventListener('click', function(event) {
+          modalCart.classList.add("modal-cart--show");
+          overlay.classList.add("modal-overlay--show");
+          event.preventDefault();
+});
+      }
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {

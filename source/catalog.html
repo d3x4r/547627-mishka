@@ -188,14 +188,17 @@
 
     <section class="modal-cart">
       <form class="modal-cart__form" action="https://echo.htmlacademy.ru" method="get">
-        <h2 class="text-title">Добавить в корзину</h2>
-        <p class="simple-text">Выберите размер:</p>
+        <h2 class="modal-cart__title text-title">Добавить в корзину</h2>
+        <p class="modal-cart__text simple-text">Выберите размер:</p>
         <div class="modal-cart__inputs-wrapper">
-          <label class="modal-cart__input"><input type="radio" name="size" checked>S</label>
-          <label class="modal-cart__input"><input type="radio" name="size">M</label>
-          <label class="modal-cart__input"><input type="radio" name="size">L</label>
+          <input class="modal-cart__radio visually-hidden" type="radio" id="size-s" name="size" checked>
+          <label class="modal-cart__input" for="size-s">S</label>
+          <input class="modal-cart__radio visually-hidden" type="radio" id="size-m" name="size">
+          <label class="modal-cart__input" for="size-m">M</label>
+          <input class="modal-cart__radio visually-hidden" type="radio" id="size-l" name="size">
+          <label class="modal-cart__input" for="size-l">L</label>
         </div>
-        <button class="button button--modal-cart" type="submit">Добавить</button>
+        <button class="button modal-cart__button button--modal-cart" type="submit">Добавить</button>
       </form>
     </section>
     <div class="modal-overlay"></div>
