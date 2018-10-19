@@ -48,3 +48,8 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+overlay.addEventListener('click', function() {
+     modal.classList.remove("modal-cart--show");
+     overlay.classList.remove("modal-overlay--show");
+});
