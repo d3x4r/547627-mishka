@@ -1,7 +1,7 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 
-navMain.classList.remove('main-nav--nojs');
+navMain.classList.remove('main-nav--no-js');
 
 navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('main-nav--close')) {
@@ -50,6 +50,6 @@ window.addEventListener("keydown", function (evt) {
 });
 
 overlay.addEventListener('click', function() {
-     modal.classList.remove("modal-cart--show");
-     overlay.classList.remove("modal-overlay--show");
+      modal.classList.remove("modal-cart--show");
+      overlay.classList.remove("modal-overlay--show");
 });
