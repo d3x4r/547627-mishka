@@ -113,6 +113,8 @@
   }
 
   .contacts__title {
+    box-sizing: border-box; //
+    padding-right: 150px; //
     font-size: 43px;
     line-height: 50px;
     justify-content: flex-start;
@@ -193,7 +195,9 @@
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
-    padding-left: 15.9%;
+    // padding-left: 15.9%;
+    padding-right: 50%;
+    padding-left: 10%;
   }
 
   .contacts__list {
