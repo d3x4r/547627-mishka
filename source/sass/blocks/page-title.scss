@@ -10,8 +10,17 @@
 
 @media (min-width: $tablet-width) {
   .page-title {
+    position: relative;
     min-height: 181px;
+  }
 
+  .page-title::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    left: 0;
+    bottom: -1px;
     background-image: url("../img/bg-zigzag-fill-tablet-catalog.svg");
     background-position: right bottom;
     background-repeat: repeat-x;
@@ -29,10 +38,18 @@
   .page-title {
     min-height: 221px;
 
-    background-image: url("../img/bg-zigzag-fill-desktop-catalog.svg");
-    background-position: right bottom;
-    background-repeat: repeat-x;
+    // background-image: url("../img/bg-zigzag-fill-desktop-catalog.svg");
+    // background-position: right bottom;
+    // background-repeat: repeat-x;
     box-shadow: 0 -51px 0 0 #f1f1f1;
+  }
+
+  .page-title::before {
+    background-image: url("../img/bg-zigzag-fill-desktop-catalog.svg");
+    width: 1150px;
+    height: 34px;
+    bottom: -1px;
+    left: calc(50% - 575px);
   }
 
   .page-title__text {

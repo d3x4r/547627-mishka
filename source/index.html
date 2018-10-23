@@ -6,13 +6,7 @@
   <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.min.css" rel="stylesheet">
-  <!-- Pixel Glass -->
-  <link href="../source/css/pixel-index.css" rel="stylesheet">
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
-  <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=< aab9b633-e84f-42a9-9e7d-9d8bf07c5beb>" type="text/javascript"></script>
+  <link rel="preload" href="/fonts/opensans.woff2" as="font">
   <script src="js/picturefill.js"></script>
 </head>
 
@@ -21,7 +15,7 @@
     <include src="build/img/sprite.svg"></include>
   </div>
   <header class="page-header">
-    <nav class="main-nav main-nav--open main-nav--no-js">
+    <nav class="main-nav main-nav--close main-nav--no-js">
       <button class="main-nav__toggle" type="button" aria-label="Показать или закрыть меню"></button>
       <ul class="main-nav__list">
         <li class="main-nav__logo"><a>
@@ -233,6 +227,8 @@
     </form>
   </section>
   <div class="modal-overlay"></div>
+  <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=%3Caab9b633-e84f-42a9-9e7d-9d8bf07c5beb%3E" type="text/javascript"></script>
   <script src="js/map.js"></script>
   <script src="js/script.js"></script>
   <script src="js/svg4everybody.js"></script>
