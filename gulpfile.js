@@ -50,9 +50,9 @@ gulp.task("images", function () {
       imagemin.jpegtran({ progressive: true }),
       imagemin.svgo({
         plugins: [
-            {removeViewBox: false}
+          { removeViewBox: false }
         ]
-    })
+      })
     ]))
     .pipe(gulp.dest("build/img"));
 });
@@ -88,10 +88,10 @@ gulp.task("minify", () => {
 
 gulp.task("compress", function (cb) {
   pump([
-        gulp.src("build/js/*.js"),
-        uglify(),
-        gulp.dest("build/js")
-    ],
+    gulp.src("build/js/*.js"),
+    uglify(),
+    gulp.dest("build/js")
+  ],
     cb
   );
 });
@@ -124,8 +124,8 @@ gulp.task("build", gulp.series(
   "webp",
   "sprite",
   "html",
-	"minify",
-	"compress"
+  "minify",
+  "compress"
 ));
 
 gulp.task("start", gulp.series("css", "server"));
