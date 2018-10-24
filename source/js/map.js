@@ -20,9 +20,10 @@
 //   myMap.geoObjects
 //       .add(myPlacemark)
 // });
-var myMap;
+
+ymaps.ready(init);
 function init () {
-			myMap = new ymaps.Map(document.getElementsByClassName("contacts__map-yandex")[0], {
+			var myMap = new ymaps.Map(document.getElementsByClassName("contacts__map-yandex")[0], {
           center:[59.938772,30.323197],
           zoom: 16.7,
           controls: []
