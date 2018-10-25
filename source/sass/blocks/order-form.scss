@@ -238,6 +238,13 @@
   opacity: 0.3;
 }
 
+.order-form__text-input:-ms-input-placeholder,
+.order-form__textarea:-ms-input-placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.3);
+}
+
 .order-form__text-input--tel::placeholder {
   font-size: 19px;
   text-transform: uppercase;
@@ -420,6 +427,12 @@
     line-height: 18px;
   }
 
+  .order-form__text-input:-ms-input-placeholder,
+  .order-form__textarea:-ms-input-placeholder {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
   .order-form__field--extra {
     margin-bottom: 39px;
     padding-top: 50px;
@@ -539,4 +552,8 @@
   .order-form__button {
     width: 33%;
   }
+}
+
+.order-form__text-input--tel:-ms-input-placeholder {
+  text-transform: uppercase;
 }

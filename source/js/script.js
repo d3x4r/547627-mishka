@@ -1,15 +1,15 @@
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
+var navMain = document.querySelector(".main-nav");
+var navToggle = document.querySelector(".main-nav__toggle");
 
-navMain.classList.remove('main-nav--no-js');
+navMain.classList.remove("main-nav--no-js");
 
-navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('main-nav--close')) {
-    navMain.classList.remove('main-nav--close');
-    navMain.classList.add('main-nav--open');
+navToggle.addEventListener("click", function() {
+  if (navMain.classList.contains("main-nav--close")) {
+    navMain.classList.remove("main-nav--close");
+    navMain.classList.add("main-nav--open");
   } else {
-    navMain.classList.add('main-nav--close');
-    navMain.classList.remove('main-nav--open');
+    navMain.classList.add("main-nav--close");
+    navMain.classList.remove("main-nav--open");
   }
 });
 
@@ -32,7 +32,7 @@ var purchase = document.querySelectorAll(".catalog__buy"),
 
       for (index = 0; index < purchase.length; index++) {
     button = purchase[index];
-        button.addEventListener('click', function(event) {
+        button.addEventListener("click", function(event) {
           modalCart.classList.add("modal-cart--show");
           overlay.classList.add("modal-overlay--show");
           event.preventDefault();
@@ -49,7 +49,7 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-overlay.addEventListener('click', function() {
+overlay.addEventListener("click", function() {
       modal.classList.remove("modal-cart--show");
       overlay.classList.remove("modal-overlay--show");
 });
