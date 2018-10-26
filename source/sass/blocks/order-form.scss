@@ -557,3 +557,11 @@
 .order-form__text-input--tel:-ms-input-placeholder {
   text-transform: uppercase;
 }
+
+.order-form_checkbox:focus + .order-form__label--checkbox {
+  outline: 1px dotted black;
+}
+
+.order-form__radio:focus + .order-form__label--radio {
+  outline: 1px dotted black;
+}
