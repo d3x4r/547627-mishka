@@ -16,6 +16,7 @@
   margin: 0 auto;
   min-height: 282px;
   padding-top: 69px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -190,6 +191,7 @@
   }
 
   .assortment__wrapper {
+    position: relative;
     margin: 0 auto;
     width: 1050px;
     background-image: url("../img/hero-desktop@1x.jpg");
@@ -220,6 +222,7 @@
   .assortment {
     position: relative;
     background-image: none;
+    box-shadow: 0 -51px 0 0 #f9f9f9;
   }
 
   .assortment__list::before {
@@ -229,12 +232,13 @@
   .assortment__wrapper::before {
     position: absolute;
     content: "";
-    width: 100%;
+    width: 1150px;
     height: 34px;
-    left: 0;
+    left: -50px;
     bottom: -19px;
     background-image: url("../img/bg-zigzag-fill-desktop.svg");
-    background-position: left bottom;
+    background-position: 13px bottom;
     z-index: 1;
+    background-repeat: repeat-x;
   }
 }

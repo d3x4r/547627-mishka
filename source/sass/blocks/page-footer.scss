@@ -26,19 +26,51 @@
   opacity: 0.3;
 }
 
-.page-footer__social-list {
-  @include reset-indent;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 26px;
-  padding-bottom: 10px;
-  list-style: none;
+.page-footer__social {
+  padding-bottom: 6px;
   border-bottom: 1px solid #e5e5e5;
 }
 
+.page-footer__social-list {
+  @include reset-indent;
+  box-sizing: border-box;
+  width: 259px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 26px;
+  // padding-left: 3px;
+  padding-bottom: 10px;
+  list-style: none;
+  padding-left: 57px;
+  padding-right: 15px;
+}
+
 .page-footer__social-item {
-  width: 24px;
-  height: 40px;
+  padding-bottom: 10px;
+  margin-right: 41px;
+
+  &--instagram {
+    width: 22px;
+    height: 21px;
+    margin-top: 4px;
+  }
+
+  &--facebook {
+    width: 15px;
+    height: 28px;
+  }
+
+  &--twitter {
+    width: 23px;
+    height: 20px;
+    margin-top: 4px;
+  }
+}
+
+.page-footer__social-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .page-footer__social-icon:hover {
@@ -50,12 +82,12 @@
 }
 
 .page-footer__social-first {
-  padding-left: 40px;
+  // padding-left: 40px;
   padding-top: 4px;
 }
 
 .page-footer__social-last {
-  padding-right: 41px;
+  // padding-right: 41px;
   padding-top: 4px;
 }
 
@@ -63,7 +95,7 @@
   display: flex;
   align-self: center;
   width: 185px;
-  margin-top: 21px;
+  margin-top: 23px;
 }
 
 .page-footer__developers:hover .page-footer__developers-logo {
@@ -86,7 +118,8 @@
   font-weight: bold;
   color: $title;
   margin-right: 29px;
-  padding-top: 3px;
+  padding-top: 4px;
+  padding-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
@@ -110,10 +143,13 @@
     padding-top: 51px;
   }
 
-  .page-footer__social-list {
-    width: 145px;
+  .page-footer__social {
+    border-bottom: none;
+  }
 
-    justify-content: space-between;
+  .page-footer__social-list {
+    width: 151px;
+
     border: none;
     margin: 0;
     margin-top: 7px;
@@ -130,7 +166,9 @@
 
   .page-footer__developers {
     margin: 0;
+    margin-top: 8px;
     padding: 0;
+    align-self: flex-start;
   }
 
   .page-footer__form {

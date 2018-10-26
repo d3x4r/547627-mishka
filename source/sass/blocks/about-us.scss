@@ -1,7 +1,7 @@
 .about-us {
   display: flex;
   flex-direction: column;
-  margin-top: 28px;
+  margin-top: 26px;
   width: 82%;
   margin-right: auto;
   margin-left: auto;
@@ -120,95 +120,131 @@
   }
 
   .about-us__title {
+    width: 334px;
     margin-top: 10px;
   }
 
   .about-us__item {
-    margin-bottom: 112px;
+    width: 50%;
+    margin-bottom: 110px;
     font-size: 20px;
     line-height: 22px;
+    box-sizing: border-box;
 
     &--icon-flower {
       order: 1;
+      padding-right: 110px;
     }
 
     &--icon-money {
       order: 3;
+      padding-right: 85px;
     }
 
     &--icon-heart {
       order: 5;
+      padding-right: 100px;
     }
 
     &--icon-ball {
       order: 2;
+      padding-right: 50px;
     }
 
     &--icon-rocket {
       order: 4;
+      padding-right: 20px;
     }
 
     &--icon-gift {
       order: 6;
+      padding-right: 50px;
     }
   }
 
   .about-us__list {
+    max-width: 100%;
+
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 102px;
-    margin-left: 2px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 2px;
   }
 
-  .about-us__item-flower {
-    width: 210px;
-  }
+  // .about-us__item-flower {
+  //   width: 210px;
+  //   margin-right: 9%;
+  // }
 
-  .about-us__item-money {
-    width: 240px;
-  }
+  // .about-us__item-money {
+  //   width: 240px;
+  //   margin-right: 6.6%;
+  // }
 
-  .about-us__item-heart {
-    width: 240px;
-    margin-right: 2.9%;
-  }
+  // .about-us__item-heart {
+  //   width: 240px;
+  //   margin-right: 2.9%;
+  // }
 
-  .about-us__item-ball {
-    width: 255px;
-    margin-left: 18.4%;
-    margin-right: 12%;
-  }
+  // .about-us__item-ball {
+  //   width: 255px;
+  //   // margin-left: 18.4%;
+  //   margin-left: 9%;
+  //   margin-right: 12%;
+  // }
 
-  .about-us__item-rocket {
-    width: 300px;
-    margin-left: 14.5%;
-    margin-right: 4.9%;
-  }
+  // .about-us__item-rocket {
+  //   width: 300px;
+  //   // margin-left: 14.5%;
+  //   margin-left: 7.5%;
+  //   margin-right: 4.9%;
+  // }
 
-  .about-us__item-gift {
-    width: 240px;
-    margin-left: 11.1%;
-  }
+  // .about-us__item-gift {
+  //   width: 240px;
+  //   margin-left: 11.1%;
+  // }
 }
 
 @media (min-width: $desktop-width) {
   .about-us {
-    width: 61.5%;
-    max-width: 740px;
+    width: 705px;
     margin-top: 48px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .about-us__item-ball {
-    margin-left: 141px;
+  .about-us__title {
+    width: 400px;
   }
 
-  .about-us__item-rocket {
-    margin-left: 113px;
-  }
+  .about-us__item {
+    margin-bottom: 111px;
 
-  .about-us__item-gift {
-    margin-left: 91px;
+    &--icon-flower {
+      padding-right: 125px;
+    }
+
+    &--icon-money {
+      padding-right: 90px;
+    }
+
+    &--icon-heart {
+      padding-right: 125px;
+    }
+
+    &--icon-ball {
+      padding-right: 50px;
+    }
+
+    &--icon-rocket {
+      padding-right: 20px;
+    }
+
+    &--icon-gift {
+      padding-right: 70px;
+    }
   }
 }

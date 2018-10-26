@@ -11,4 +11,5 @@ npm-debug.*
 source/css/*.css
 Thumbs.db
 build/
-source/img/pixel/
+source/pixel
+pixel

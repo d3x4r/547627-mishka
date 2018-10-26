@@ -87,11 +87,11 @@
 
 @media (min-width: $tablet-width) {
   .comment {
-    margin-top: -85px;
+    margin-top: -80px;
     padding-bottom: 133px;
     background-image: url("../img/review@1x.jpg"),
       url("../img/bg-zigzag-line-tablet.svg");
-    background-position: left top, left bottom;
+    background-position: left top, -20px bottom;
     background-repeat: no-repeat, repeat-x;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -108,10 +108,12 @@
     padding-top: 77px;
     margin-left: auto;
     margin-right: auto;
+    align-items: flex-start;
   }
 
   .comment__title {
     order: 1;
+    width: 240px;
   }
 
   .comment__body {
@@ -135,6 +137,7 @@
 
   .comment__author__wrapper {
     display: flex;
+    width: 260px;
     flex-direction: column;
   }
 }
@@ -172,26 +175,27 @@
 
 @media (min-width: $desktop-width) {
   .comment {
-    width: 1150px;
+    width: 1050px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -70px;
+    margin-top: -68px;
     background-image: url("../img/review@1x.jpg"),
       url("../img/bg-zigzag-line-desktop.svg");
-    background-position: 6.2% 7px, center bottom;
-    background-repeat: no-repeat;
+    background-position: 0.2% 7px, -26px bottom;
+    background-repeat: no-repeat, repeat-x;
     padding-bottom: 187px;
   }
 
   .comment__wrapper {
     width: 885px;
     margin-top: 41px;
-    margin-left: 221px;
+    margin-left: 171px;
   }
 
   .comment__button-write {
     margin-top: 9px;
-    margin-left: 479px;
+    // margin-left: 479px;
+    margin-left: 464px;
     font-size: 17px;
   }
 
